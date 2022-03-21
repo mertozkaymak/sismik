@@ -2,7 +2,7 @@
     
     ini_set("allow_url_fopen", 1);
 
-    $jsonUrl = "https://www.sismikmarket.com/dosya/excel-urunler.json";
+    $jsonUrl = "***/dosya/excel-urunler.json";
 
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
@@ -17,7 +17,7 @@
     require_once "excel/PHPExcel/IOFactory.php";
 
     file_put_contents( __DIR__ . "/excel.xlsx",
-        file_get_contents("https://app6.bosch.de/cgi-bin/WebObjects.dll/V5Prod_CatalogWeb.woa/wa/Exchange/material?exchange=s9g4r3d7lv0hhuqr6e5jbgcdir&customer=54002980")
+        file_get_contents("***")
     );
     
     $inputFileName = __DIR__ . "/excel.xlsx";
